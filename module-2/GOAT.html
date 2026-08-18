@@ -4,34 +4,56 @@
 <title>Full Screen Colors</title>
 <head>
 
-
-
-
     <style>
         body {
-            background-color: #000000;            
+            background-color: #070606;            
         }
-        
-
+    </style>
+    <style>
+        body {
+            margin: 0;
+        }
+        .box {
+            position: absolute;
+            right: 30px;
+            top: auto;
+            width: 65vw;
+            border-top: 2px solid rgb(165, 147, 13);
+            border-left: 2px solid rgb(165, 147, 13);
+            border-right: 2px solid rgb(165, 147, 13);
+            border-bottom: 2px solid rgb(165, 147, 13);
+            box-sizing: border-box;
+            height: max-content;
+            padding: 25px;
+            border-radius:  12px;
+        }
+        .gen-text {
+            font-family: Courier;
+            text-align: left;
+            font-size: 14px;
+            text-align: left;
+            color:rgb(199, 198, 198);
+        }
     </style>
 
     <style>
-        
         .image-container {
             position: relative;
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
+
         }
         .image-container img {
             width: 100%;
             height: Auto;
             display: block;
+        padding-bottom: 100px;
         }
         .text-overlay {
         position: absolute;
-        top: 80%;                 /* Push down to the middle */
-        left: 50%;                /* Push right to the middle */
+        top: 50%;                 /* Push down to the middle */
+        left: 85%;                /* Push right to the middle */
         transform: translate(-50%, -50%); /* Perfectly center the text alignment */
         color: rgb(165, 147, 13);             /* Text color */
         font-family: Courier;
@@ -39,20 +61,30 @@
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Makes text readable against light images */
         text-align: center;
-        }
-    </style>
-    <style>
-        .gen-text {
-            
+
+        
         }
     </style>
 </head>
+
+
+
+
 <body>
 
-  <div class="image-container">
+<div class="image-container">
     <img src="bass_reeves1.png" alt="bass_reeves1">
-    <div class="text-overlay"> <h1> Bass Reeves </h1> <h4>The Invincible Marshal</h4></div>
-  </div>
+        <div class="text-overlay">
+            <h1> Bass Reeves </h1> <h4>The Invincible Marshal</h4>
+        </div>
+</div>
+  
+  
+<div class="box">
+    <div class="gen-text">
+        <h1> The greatest marshall</h1>
+    </div>
+</div>
 
 
 </body>
