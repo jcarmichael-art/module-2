@@ -1,90 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<title>Full Screen Colors</title>
+<title>Bass_Reeves</title>
 <head>
 
     <style>
         body {
-            background-color: #070606;            
+            background-color: #070606;     
+            margin: 0;       
         }
-    </style>
-    <style>
-        body {
-            margin: 0;
-        }
+
         .box {
             position: absolute;
-            right: 30px;
+            right: 5vw;
             top: auto;
-            width: 65vw;
+            width: 50vw;
             border-top: 2px solid rgb(165, 147, 13);
             border-left: 2px solid rgb(165, 147, 13);
             border-right: 2px solid rgb(165, 147, 13);
             border-bottom: 2px solid rgb(165, 147, 13);
             box-sizing: border-box;
             height: max-content;
-            padding: 25px;
-            border-radius:  12px;
+            padding: 0px;
+            border-radius: 20px;
         }
-        .gen-text {
-            font-family: Courier;
-            text-align: left;
-            font-size: 14px;
-            text-align: left;
+        .box-step {
+            position: absolute;
+            right: 0vw;
+            top: auto;
+            width: 50vw;
+            border-top: 2px solid rgb(165, 147, 13);
+            border-left: 2px solid rgb(165, 147, 13);
+            border-right: 2px solid rgb(165, 147, 13);
+            border-bottom: 2px solid rgb(165, 147, 13);
+            box-sizing: border-box;
+            height: max-content;
+            padding: 0px;
+            border-radius: 20px;
+        }
+        .gen-text-middle {
+            font-family: monospace;
+            text-align: center;
+        font-size: clamp(1rem, 1.5vw, 2rem); 
             color:rgb(199, 198, 198);
         }
-    </style>
-
-    <style>
-        .image-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-
+        .gen-text-left {
+            font-family: monospace;
+            text-align: left;
+            font-size: clamp(1rem, 1.5vw, 2rem); 
+            color:rgb(199, 198, 198);
         }
-        .image-container img {
+        .head-image {
             width: 100%;
             height: Auto;
             display: block;
-        padding-bottom: 100px;
+            padding-bottom: 20px;
         }
-        .text-overlay {
+        .historic-img-portrait {
+            width: 20vw;
+            height: auto;
+            border-radius: 20px;
+        }
+        .historic-img-landscape {
+            width: 40vw;
+            height: auto;
+            border-radius: 20px;
+        }        
+        .scaling-text {
+        font-size: clamp(16px, 4vw, 48px); 
+        color: rgb(165, 147, 13);  
         position: absolute;
-        top: 50%;                 /* Push down to the middle */
-        left: 85%;                /* Push right to the middle */
-        transform: translate(-50%, -50%); /* Perfectly center the text alignment */
-        color: rgb(165, 147, 13);             /* Text color */
-        font-family: Courier;
-        font-size: 24px;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Makes text readable against light images */
         text-align: center;
-
-        
+        right: 2vw;
+        top: 10vw;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
         }
+        a {
+            color: rgb(165, 147, 13);
+        }
+
     </style>
 </head>
 
 
-
-
 <body>
-
-<div class="image-container">
-    <img src="bass_reeves1.png" alt="bass_reeves1">
-        <div class="text-overlay">
-            <h1> Bass Reeves </h1> <h4>The Invincible Marshal</h4>
+<section>
+<div>
+    <img src="bass_reeves1.png" alt="bass_reeves1" class="head-image">
+        <div class="scaling-text">
+            <h1> Bass<br>Reeves </h1> <h4>The Invincible<br>Marshal</h4>
         </div>
 </div>
+</section>  
   
-  
+
+<section>
 <div class="box">
-    <div class="gen-text">
-        <h1> The greatest marshall</h1>
+    <div class="gen-text-left">
+        <h5> 
+            <p>
+                Bass Reeves truly was a larger-than-life figure who seemed
+                capable of anything. Serving for 32 years as one of the first
+                Black United States Deputy Marshals, he spent his historic
+                career bringing law and order to the Native American
+                territories that now make up the state of Oklahoma.
+            </p>
+
+            <p>
+                Boasting more than 3,000 felony arrests with only 14
+                documented self-defense kills, Reeves was legendary
+                for executing brilliant schemes to achieve peaceful
+                apprehensions. He frequently utilized clever disguises
+                and sneaked into outlaw camps in the dead of night
+                to catch fugitives off guard.
+            </p>
+
+            <p>
+                However, Reeves was far from a one-trick pony.
+                He was a master marksman, so skilled that he 
+                was eventually banned from local shooting competitions
+                just to give other contestants a fair chance at
+                winning. He brought that monstrous precision into
+                the line of duty when absolutely necessary, such as
+                the day he was forced to take the life of a
+                notorious murderer and thief named Tom Story.
+                When later asked about the gunfight, Reeves
+                famously and bluntly remarked, "Story
+                committed suicide."
+            </p>
+
+            <p>
+                Through unyielding courage, unmatched wit, 
+                and legendary skill, Bass Reeves solidified 
+                his legacy not just as a lawman, but as the
+                ultimate frontier hero—a true G.O.A.T. of 
+                the American Wild West.
+            </p>
+            <p>
+                Some of Bass's notable kills include:
+                <ul>
+                    <li>Jim Webb</li>
+                    <li>Tom Story</li>
+                    <li>Bob Dozier</li>
+                    <li>Frank Buck</li>
+                </ul>
+            </p>
+        </h5>
+    </div>  
+    <div class="box-step">
+        <div class="gen-text-middle">
+            <h5>
+                <a href="https://en.wikipedia.org/wiki/Bass_Reeves">Historical source</a>
+                <br><br>
+                <button>
+                    <img src="insta.png" alt="insta" style="border:none;" height="50">
+                </button>
+                <a href="https://www.instagram.com/p/DTnoWd7EZ9U/">Art credit</a>
+            </h5>
+        </div>
     </div>
 </div>
+</section>
+
+
+<section>
+<div>
+    <img src="bass_reeves2.jpg" alt="bass_reeves2" class="historic-img-portrait">
+    <img src="bass_reeves3.jpg" alt="bass_reeves3" class="historic-img-portrait">  
+</div>
+<div>
+    <img src="bass_reeves4.jpg" alt="bass_reeves3" class="historic-img-landscape">  
+</div>
+</section>
 
 
 </body>
